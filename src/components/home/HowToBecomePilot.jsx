@@ -42,11 +42,11 @@ const HowToBecomePilot = () => {
     ];
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-[var(--bg-secondary)] transition-colors duration-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">HOW TO BECOME AN AIRLINE PILOT</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4">HOW TO BECOME AN AIRLINE PILOT</h2>
+                    <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
                         CPL Includes Theory Papers and 200 HRS of Flight Training. The requirements vary slightly by region.
                     </p>
                 </div>
@@ -56,15 +56,15 @@ const HowToBecomePilot = () => {
                         <motion.div
                             key={card.country}
                             whileHover={{ y: -10 }}
-                            className="bg-brand-light rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all border border-gray-100"
+                            className="bg-[var(--surface-bg)] rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all border border-[var(--border)]"
                         >
                             <div className="flex items-center justify-center w-12 h-12 bg-brand-orange/10 rounded-full mb-6 mx-auto">
                                 <MapPin className="w-6 h-6 text-brand-orange" />
                             </div>
-                            <h3 className="text-xl font-bold text-brand-navy text-center mb-6">{card.country}</h3>
+                            <h3 className="text-xl font-bold text-[var(--text-primary)] text-center mb-6">{card.country}</h3>
                             <ul className="space-y-3">
                                 {card.items.map((item, idx) => (
-                                    <li key={idx} className="flex items-start space-x-3 text-sm text-gray-600">
+                                    <li key={idx} className="flex items-start space-x-3 text-sm text-[var(--text-secondary)]">
                                         <span className="w-1.5 h-1.5 bg-brand-orange rounded-full mt-1.5 shrink-0"></span>
                                         <span>{item}</span>
                                     </li>

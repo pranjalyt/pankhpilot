@@ -9,7 +9,7 @@ export const ThemeProvider = ({ children }) => {
         // Check local storage or system preference
         const storedTheme = localStorage.getItem('pankh_theme');
         if (storedTheme) return storedTheme;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        return 'light'; // Default to light mode
     });
 
     useEffect(() => {

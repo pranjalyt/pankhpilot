@@ -32,11 +32,11 @@ const WhoCanJoin = () => {
     ];
 
     return (
-        <section className="py-20 bg-brand-light">
+        <section className="py-20 bg-[var(--bg-primary)] transition-colors duration-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">WHO CAN JOIN?</h2>
-                    <p className="text-gray-600">Aviation is open to everyone with the passion to fly.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4">WHO CAN JOIN?</h2>
+                    <p className="text-[var(--text-secondary)]">Aviation is open to everyone with the passion to fly.</p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -44,13 +44,13 @@ const WhoCanJoin = () => {
                         <motion.div
                             key={cat.title}
                             whileHover={{ y: -5 }}
-                            className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all text-center border border-gray-100 flex flex-col items-center h-full"
+                            className="bg-[var(--card-bg)] p-6 rounded-xl shadow-sm hover:shadow-md transition-all text-center border border-[var(--border)] flex flex-col items-center h-full"
                         >
                             <div className="mb-4 p-3 bg-brand-orange/10 rounded-full">
                                 {cat.icon}
                             </div>
-                            <h3 className="text-lg font-bold text-brand-navy mb-2">{cat.title}</h3>
-                            <p className="text-sm text-gray-500">{cat.desc}</p>
+                            <h3 className="text-lg font-bold text-[var(--text-primary)] mb-2">{cat.title}</h3>
+                            <p className="text-sm text-[var(--text-secondary)]">{cat.desc}</p>
                         </motion.div>
                     ))}
                 </div>

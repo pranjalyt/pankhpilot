@@ -18,6 +18,10 @@
     --hero-bg: linear-gradient(135deg, #ffffff 0%, #f0ede6 50%, #cfb38a 100%);
     --navbar-bg: rgba(255, 255, 255, 0.85);
     --navbar-text: #0a0a0a;
+    --card-bg: #FFFFFF;
+    --surface-bg: #F1F5F9;
+    /* slate-100 */
+    --text-inverse: #FFFFFF;
   }
 
   [data-theme='dark'] {
@@ -35,6 +39,10 @@
     --hero-bg: linear-gradient(135deg, #0d1117 0%, #0a0f14 50%, #00050a 100%);
     --navbar-bg: rgba(0, 0, 0, 0.65);
     --navbar-text: #ffffff;
+    --card-bg: #112240;
+    --surface-bg: #1E293B;
+    /* slate-800 */
+    --text-inverse: #0A192F;
   }
 
   body {
