@@ -7,7 +7,7 @@ export const useTheme = () => useContext(ThemeContext);
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState(() => {
         // Check local storage or system preference
-        const storedTheme = localStorage.getItem('pankh_theme');
+        const storedTheme = localStorage.getItem('pankh_pilot_theme');
         if (storedTheme) return storedTheme;
         return 'light'; // Default to light mode
     });
@@ -15,7 +15,7 @@ export const ThemeProvider = ({ children }) => {
     useEffect(() => {
         const root = window.document.documentElement;
         root.setAttribute('data-theme', theme);
-        localStorage.setItem('pankh_theme', theme);
+        localStorage.setItem('pankh_pilot_theme', theme);
     }, [theme]);
 
     const toggleTheme = () => {
